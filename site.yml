@@ -28,7 +28,7 @@
   hosts: all
   user: root
   roles:
-#    - { role: centos6-common, main_username: "{{ main_username }}", main_password: "{{ main_password }}" }
-#    - { role: centos6-apache, main_username: "{{ main_username }}", docroot: "{{ docroot }}", cake_env_mode: "{{ cake_env_mode }}" }
-#    - { role: centos6-scl-php54 }
+    - { role: centos6-common, main_username: "{{ main_username }}", main_password: "{{ main_password }}" }
+    - { role: centos6-apache, main_username: "{{ main_username }}", docroot: "{{ docroot }}", cake_env_mode: "{{ cake_env_mode }}" }
+    - { role: centos6-scl-php54 }
     - { role: centos6-scl-mysql55, dbroot: "{{ dbroot }}", permit_network: "{{ permit_network }}" }
